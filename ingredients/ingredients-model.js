@@ -1,11 +1,13 @@
 const knex = require('knex');
 const knexConfig = require('../knexfile.js');
-const db = knex(knexConfig.development);
+const db = knex(knexConfig.development)
 
 module.exports = {
-  find,
+find,
 }
+    
+
 
 function find() {
-  return db('recipes')
-}
+      return db('ingredients')
+    }
