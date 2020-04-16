@@ -4,7 +4,7 @@ exports.seed = function(knex) {
   return knex('recipe_directions').del()
     .then(function () {
       // Inserts seed entries
-      return knex('recipe_dirctions').insert([
+      return knex('recipe_directions').insert([
         {recipe_id: 4, step: 1, description: 'put toast in toaster'},
         {recipe_id: 4, step: 2, description: 'that is it you have toast'},
         {recipe_id: 5, step: 1, description: 'jelly on bread then peanut butter on other side'},

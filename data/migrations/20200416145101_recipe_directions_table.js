@@ -1,7 +1,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('recipe_directions', function(r_d) {
     r_d.increments();
-    r_d.integer('step').notNullable().unique();
+    r_d.integer('step').notNullable()
     r_d.string('description').notNullable();
     r_d 
       .integer('recipe_id')
