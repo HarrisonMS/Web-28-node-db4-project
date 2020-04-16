@@ -1,4 +1,3 @@
-
 exports.up = function(knex) {
   return knex.schema.createTable('recipe_directions', function(r_d) {
     r_d.increments();
@@ -18,4 +17,3 @@ exports.up = function(knex) {
 exports.down = function(knex) {
   return knex.schema.dropTableIfExists('recipe_directions')
 };
-//its workinggg!!!!!!
