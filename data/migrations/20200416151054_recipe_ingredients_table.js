@@ -1,6 +1,7 @@
 
 exports.up = function(knex) {
   return knex.schema.createTable('recipe_ingredients', function(r_i) {
+    r_i.increments();
     r_i.float('quantity').notNullable();
     r_i.string('unit_measurement', 128).notNullable();
     r_i
